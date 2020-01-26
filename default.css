@@ -70,7 +70,6 @@ body.index li.index a,
 body.call li.call a,
 body.speakers li.speakers a,
 body.program li.program a,
-body.committee li.committee a,
 body.organizers li.organizers a {
   font-weight: bold;
 }
