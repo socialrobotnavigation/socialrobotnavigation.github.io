@@ -42,39 +42,58 @@
 
     <div class="page_content">
     
-    <!--<h2>Summary</h2>-->
+    <!--<h2>Summary</h2>--> 
+
+    <p><img src="images/fleamarket_crowd.jpg" align="center" height="300" hspace="200"/>
+ 
+
     <p>
       <table class="index">
-        The social robot navigation community has reached a crucial point. Despite the massive paper production, there is no common language among researchers.
+        The social navigation and prediction community has reached a crucial point. Despite the large volume of publications, we lack a “common language.” Broadly speaking, we have yet to reach consensus about
  
 		Specifically, we observe that:
 		<ul>
-		<li> There is no consensus over the complete set of features that make human pedestrian navigation social. As a result, different researchers focus on engineering completely different aspects of socially acceptable behavior.
-		There are not enough open human datasets that the community can use. The existing datasets are suffering from several issues (camera placement, obstacles/arrangement is biasing traffic). But we also don’t have a good idea of what constitutes a good dataset. </li>
-		<li> There is no consensus over a validation standard. Different works adopt different settings, experimental setups, scenarios, robot platforms, baselines, and metrics. As a result, there is often no good way of relating a work to another. </li>
-		<li> The results included in robotics papers in general (but this community’s even more) are often lacking statistical rigor. We need to follow more closely best reporting practices from communities that adopt a more formal methodology when conducting empirical studies (e.g., experimental psychology). </li>
+		<li> The most meaningful skills, capabilities, and behaviors that a social navigation system should have.</li>
+		<li> Validation standards. Practitioners adopt different scenarios, experimental setups, robot platforms, baselines, and metrics. </li>
+		<li> The abstractions best suited for the challenges of social navigation. </li>
+    <li> What constitutes a good social navigation dataset. Relatedly, it is unclear how to best <i>use</i> a given dataset (e.g., for training or validation).</li>
 		</ul>
 
     <p>
-          Motivated by these observations, we would like to call a diverse, multidisciplinary audience to participate in an interactive, discussion-oriented workshop. We would like to hear from roboticists, psychologists, sociologists on how we can develop better standards for the social robot navigation community. Our goal is to open the discussion over all above topics and reach a consensus over: (1) social robot definitions; (2) the desired attributes of good human datasets; (3) validation benchmarks; (4) best practices in reporting results. The ideal outcome of this workshop will be a summary of our discussions and findings in a journal article. Some of the insights that we hope to extract will also be applicable to other areas of robotics.
+
+      Finally,  social robot navigation and prediction evaluation studies often lack the statistical rigor seen in other research communities (e.g., experimental psychology).
+      <br><br>
+      Motivated by these observations, we would like to call a diverse, multidisciplinary audience to participate in an interactive, discussion-oriented workshop. We would like to hear from roboticists, social scientists, and designers about how to develop best practices for social robot navigation research.  
+
+
+      The workshop will be organized around focus topics, which are more narrow “common language” challenges.  After our invited speakers present short motivational talks about a focus topic, workshop participants will break off into multiple workgroups. These workgroups will be comprised of the invited speakers, the organizers, and the workshop attendees. Ultimately, we want the community to drive the conversation around the focus topics.
+
         </p>
 
       </table>
 
-    <h3>Key Questions</h3>
+    <h3>Focus topic 1. What are the most important variables that influence social robot navigation performance? In other words, what levers should we be exploring?</h3>
     <ul>
-      <li>What is the value of simulation in the domain of social robot navigation?
-      <li>How do we build a simulation environment for validation of social navigation methodologies?</li>
-      <li>What are the advatanges and limitations of machine learning when it comes to the deployment of social robot navigation platforms in real-world environments?</li>
-      <li>What are the appropriate abstractions to represent complex crowd behaviors for the purposes of perception, planning and control? How do we ensure computational tractability and scalability?</li>
-      <li>How do we ensure safety and how do we handle the lack of any potential guarantees?</li>
-      <li>How do we deal with the inability of controlling variables in experimental settings?</li>
-      <li>What is the right level of abstraction for the context? How do we incorporate context models and parameters?</li>
-      <li>How should the robot behave? Do we want it to mimic humans?</li>
-      <li>How do we deal with the robot’s form factor or the novelty effect?</li>
-      <li>What are some good baselines? How do we ensure that are accessible to the community?</li>
-      <li>What are some appropriate benchmarks?</li>
+      <li>What robot behaviors will enable untrained bystanders/pedestrians to navigate effectively around robots? What behavior models and interaction metaphors are most effective for enabling effective robot navigation -- human-like, dog-like, what else?</li>
+      <li>What social robot navigation performance metrics should we optimize for? How should we measure them? What are appropriate benchmarks? What are some good baselines? How do we ensure that these metrics are accessible to the community?</li>
+      <li>How do we design social robot navigation studies to address and get beyond novelty effects in our data?</li>
     </ul>
+
+    <h3>Focus topic 2: What are the best abstractions for social robot navigation from the perspective of perception, planning, and control? </h3>
+    <ul>
+      <li>What are the appropriate representations to capture important properties of collective crowd behavior?</li>
+      <li>What is the right level of detail to include in context models?  How does this change depend on the experimental setting?</li>
+      <li>How do we encode behavior specifications into objective or reward functions?</li>
+      <li>How do we verify that a robot navigation framework is correct and safe?  How do we manage a safety critical system without safety guarantees?</li>
+    </ul>
+
+    <h3>What properties should a social navigation dataset capture?  How do we deal with uncontrollable variables in experimental settings?</h3>
+    <ul>
+      <li>What aspects of human behavior can be simulated?  What aspects of human behavior are most important for social navigation?</li>
+      <li>How does simulation limitation inform reinforcement learning?  For example: if we train on social forces agents, can we quantify performance boundaries when deploying in real world settings?</li>
+      <li>What is the correct reward function for reinforcement learning based social navigation?</li>
+      <li>What role does supervised (e.g. deep) learning play in social navigation?  How do we verify that we have not learned dataset specific artifacts?  How do we account for “distribution shift” in social navigation settings?</li>
+    </ul>    
 
     <h3>Important dates</h3>
     <table>

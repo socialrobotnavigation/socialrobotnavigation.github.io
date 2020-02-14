@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 2em 2em 4em;
   max-width: 1024px;
-  font-family: "Arial", Arial, Arial, sans-serif;
+  font-family: "ralewayregular";
   font-size: 100%;
   line-height: 1.5em;
   background-color: #FFFFFF;
@@ -29,7 +29,7 @@ table,th,td,a
   vertical-align: top;
   background-color: transparent;
   color: #333F48;
-  font: "Arial";
+  font: "ralewayregular";
   font-weight: normal;
 }
 
@@ -108,3 +108,23 @@ tr.break {
 a.speakers {
   color: #ab2a21;
 }
+
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'ralewayregular';
+    src: local('../fonts/ralewayregular'), local('../fonts/raleway-regular-webfont'),
+       url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-regular-webfont.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;       
+}
+/* raleway-700 - latin */
+@font-face {
+    font-family: 'ralewaybold';
+    src: local('../fonts/ralewaybold'), local('../fonts/raleway-bold-webfont'),
+       url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-bold-webfont.woff') format('woff');    
+    font-weight: 900;
+    font-style: normal;          
+}
+
