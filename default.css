@@ -128,3 +128,12 @@ a.speakers {
     font-style: normal;          
 }
 
+footer {
+  font-weight: 100;
+  font-size: 50%;
+  text-align: right;
+  vertical-align: bottom;
+  font: "Arial";
+  color: #333F48;
+  background-color: transparent;
+}
