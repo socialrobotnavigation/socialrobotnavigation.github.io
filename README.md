@@ -1,2 +1,1 @@
-# Website for our proposed RSS workshop on Social Robot Navigation
-My website
+# Social Robot Navigation Workshop website
