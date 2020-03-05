@@ -1,2 +1,1 @@
-# cmavrogiannis.github.io
-My website
+# Social Robot Navigation Workshop website
