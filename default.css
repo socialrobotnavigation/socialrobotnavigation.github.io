@@ -70,9 +70,7 @@ body.index li.index a,
 body.call li.call a,
 body.speakers li.speakers a,
 body.program li.program a,
-body.organizers li.organizers a {
-  font-weight: bold;
-}
+body.organizers li.organizers a,
 body li a{
   font-weight: normal;
 }
@@ -106,7 +104,13 @@ tr.break {
 }
 
 a.speakers {
-  color: #ab2a21;
+  color: #376E67;
+  font-weight: bold;
+}
+
+a.organizers {
+  color: #376E67;
+  font-weight: bold;
 }
 
 /* raleway-regular - latin */
