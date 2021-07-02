@@ -71,6 +71,8 @@ body.call li.call a,
 body.speakers li.speakers a,
 body.program li.program a,
 body.organizers li.organizers a,
+body.focustopics li.focustopics a,
+body.acceptedpapers li.acceptedpapers a,
 body li a{
   font-weight: normal;
 }
